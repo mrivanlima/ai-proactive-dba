@@ -66,6 +66,10 @@
     <Folder Include="Tables\base" />
     <Folder Include="Tables\ai" />
     <Folder Include="Tables\audit" />
+    <Folder Include="Programmability" />
+    <Folder Include="Programmability\Stored Procedures" />
+    <Folder Include="Programmability\Stored Procedures\perf" />
+    <Folder Include="Programmability\Stored Procedures\ops" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\cfg.sql" />
@@ -86,5 +90,7 @@
     <Build Include="Tables\ops\FileGrowthEvent.sql" />
     <Build Include="Tables\ops\DatabaseSizeHistory.sql" />
     <Build Include="Tables\ops\JobFailureEvent.sql" />
+    <Build Include="Programmability\Stored Procedures\perf\usp_collect_wait_stats.sql" />
+    <Build Include="Programmability\Stored Procedures\ops\usp_collect_blocking.sql" />
   </ItemGroup>
 </Project>
