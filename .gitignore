@@ -1,0 +1,25 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+
+# SQL Database Project / DACPAC artifacts
+*.dacpac
+*.publish.xml
+*.sqlproj.user
+
+# Test and coverage output
+TestResults/
+
+# Logs
+*.log
+
+# OS / misc
+.DS_Store
+Thumbs.db
