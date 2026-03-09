@@ -1,0 +1,3 @@
+docker exec -it sql2025-lab /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "YourStrong!Passw0rd" -C -Q "SELECT @@VERSION AS SQLVersion, SERVERPROPERTY('Edition') AS Edition, SERVERPROPERTY('ProductVersion') AS ProductVersion;"
+docker exec -it sql2025-lab /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "YourStrong!Passw0rd" -C -Q "IF DB_ID('DBA_Intelligence') IS NULL CREATE DATABASE [DBA_Intelligence]; SELECT name FROM sys.databases WHERE name = 'DBA_Intelligence';"
+Get-ChildItem -Recurse -Filter *.dacpac | Select-Object FullName
